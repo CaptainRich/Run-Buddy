@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Define the main body style */
@@ -48,9 +49,35 @@ header nav ul li {
     display: inline;
 }
 
-
+/* Define the decoration of the header links. */
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size:  22px;
+}
+
+/* Style the footer area. */
+footer {
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+}
+
+/* Apply styles to the "h2" element. */
+footer h2 {
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
+
+/* Apply a style to the "div" element which defines the rest of the footer.  */
+footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a {
+    color: #024e76;
 }
