@@ -1,0 +1,56 @@
+
+
+/* Remove the defauult HTML style assumptions. */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define the main body style */
+body{
+    color: #39a6b2;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Define the style for the header  */
+header {
+    /* 20 pixesl top& bottom, 35 pixels left & right */
+    padding: 20px  35px;     
+    background-color: #39a6b2;
+}
+
+/*  This only applies to the "h1" tag of the "header"  */
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #fce138;
+    margin: 0;
+    display: inline;        /* so it doesn't take the entire width */
+}
+
+/* Define the style for the "anchors" in the header */
+/* I we don't specify "none", links will be underlined blue. */
+header a {
+    text-decoration: none;
+    color: #fce138;
+}
+
+
+/* Move the "nav" elements to the right. */
+header nav {
+    float: right;
+    margin: 7px 0;
+}
+
+
+/* Make the "list elements" all inline (on the same line) */
+header nav ul li {
+    display: inline;
+}
+
+
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size:  22px;
+}
