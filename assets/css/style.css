@@ -85,5 +85,23 @@ footer a {
 /* Overall padding for all "section" elements. */
 section {
     padding: 60px;
-    background-image: url=("../images/hero-bg.jpg");
+
 }
+
+/* Styling for the "hero" section of the page. */
+.hero {
+    background-image: url("../images/hero-bg.jpg");
+    height: 600px;
+    background-size: cover;  /* avoid clipping the image */
+    background-position: center;
+}
+/* End of "hero" styling. */
+
+/* Styling for the hero input form. */
+.hero-form {
+    color: #024e76;
+    background-color: #fce135;
+    padding: 20px;
+    width: 500px;
+}
+/* End of "hero-form" styling. */
