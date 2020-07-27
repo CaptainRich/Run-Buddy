@@ -149,11 +149,11 @@ h3 {
 /* Define a few general styles for the following four sections. */
 .section-title {
     font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;  /* top, right, bottom, left */
     display: inline-block;
+    padding: 0 100px 20px 100px;  /* top, right, bottom, left */
     border-bottom: 3px solid;
+    margin-bottom: 35px;
+    color: #024e76;
 }
 
 .primary-border {
