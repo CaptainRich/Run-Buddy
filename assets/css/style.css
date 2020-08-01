@@ -286,10 +286,11 @@ h3 {
 .contact-info iframe {
     width: 400px;
     height: 400px;
+
 }
 
 .contact-info div {
-    width: 410px;
+    width: 310px;
     display: inline-block;
     vertical-align: top;
     text-align: left;
@@ -311,6 +312,15 @@ h3 {
 
 .contact-info a {
     color: #fce138;
+}
+
+
+.contact-info button {
+    color: #024e76;
+    background-color: #fce135;
+    font-size: 16px;
+    padding: 10px 20px;
+
 }
 
 /* End of styles for "about us" section. */
