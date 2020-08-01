@@ -58,19 +58,20 @@ header nav ul {
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size:  1.55vw;    /* vw = viewport width */
+    font-size:  1.55vw;    /* vw = viewport width, here 1.55% of window width */
 }
 
 /* Style the footer area. */
 footer {
     background: #fce138;
-    width: 100%;
     padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* Apply styles to the "h2" element. */
 footer h2 {
-    display: inline;
     color: #024e76;
     font-size: 30px;
     margin: 0;
@@ -78,7 +79,6 @@ footer h2 {
 
 /* Apply a style to the "div" element which defines the rest of the footer.  */
 footer div {
-    float: right;
     line-height: 1.5;
     text-align: right;
 }
