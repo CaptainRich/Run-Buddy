@@ -383,8 +383,21 @@ h3 {
 
 /* End of styles for "about us" section. */
 
-/* Define the 'media query' styles.  */
+/* Define the styles for the Service Plans Grid. */
+.service-gid-container {
+    display: grid;
+}
 
+.service-grid-item {
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+    border: solid;
+    color: black;
+}
+
+/* Define the 'media query' styles.  */
+/* Media queries should always be last in the style sheet. */
 /* Media query style for smaller desktop screens and smaller than 980. */
 @media screen and (max-width: 980px) {
     header {
