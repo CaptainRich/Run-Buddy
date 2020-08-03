@@ -109,7 +109,7 @@ h3 {
     margin: 0px;
 }
 
-.here-content {
+.hero-content {
     width: 35%;
     text-align: right;
     margin: 3.5%;
@@ -125,7 +125,7 @@ h3 {
 }
 
 .hero-content p {
-    width: 500px;
+
     color: white;
 }
 
@@ -385,20 +385,112 @@ h3 {
 
 /* Define the 'media query' styles.  */
 
-/* Media query style for smaller desktop screens and smaller. */
+/* Media query style for smaller desktop screens and smaller than 980. */
 @media screen and (max-width: 980px) {
- 
+    header {
+        padding-bottom: 0;   
+        justify-content: center; 
     }
-}
 
-/* Media query style for tablets and smaller. */
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    header nav ul li a {
+        font-size: 20px;
+    }
+    
+    header h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-content, .hero-form {
+        width: 100%;
+    }
+
+    .hero-content {
+        text-align:  center;
+    }
+
+    .section-title {
+        width: 80%;
+    }
+
+    .trainer {
+        flex: 0 70%
+    }
+
+    .contact-info iframe {
+        flex: 1 100%
+    }
+}  /* End of Media query style for smaller desktop screens and smaller than 980. */
+
+/* Media query style for tablets and smaller than 768. */
 @media screen and (max-width: 768px) {
-
+    section {
+        padding: 30px 15px;
     }
-}
 
-/* Media query style for mobile phones and smaller. */
+    .step h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+
+    .step-info {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .step-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .step-text {
+        flex: 100%;
+    } 
+}  /* End of Media query style for tablets and smaller than 768. */
+
+/* Media query style for mobile phones and smaller than 575. */
 @media screen and (max-width: 575px) {
   
+    .hero-form button {
+        width: 100%;
     }
-}
+
+    .section-title {
+        width: 95%;
+    }
+
+    .intro p {
+        width: 100%;
+    }
+
+    .trainer {
+        flex: 0 100%;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-info > * {
+        flex: 0 100%;
+    }
+
+    .contact-form {
+        order: 3;
+    }
+}  /* End of Media query style for mobile phones and smaller. */
+
