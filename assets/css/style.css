@@ -21,6 +21,14 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;     /* for Safari */
+    position: sticky;
+    top: 0;
+    /* Copied from ".hero" below so that the "header" looks like it is part of the "hero" area. */
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;  /* avoid clipping the image */
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 /*  This only applies to the "h1" tag of the "header"  */
@@ -29,6 +37,7 @@ header h1 {
     margin: 0;
     font-size: 36px;
     color: #fce138;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Define the style for the "anchors" in the header */
@@ -59,6 +68,15 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size:  1.55vw;    /* vw = viewport width, here 1.55% of window width */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+header nav ul li a:hover {         /* change the button when the mouse hovers */
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
 }
 
 /* Style the footer area. */
@@ -97,7 +115,8 @@ section {
 .hero {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;  /* avoid clipping the image */
-    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -122,6 +141,7 @@ h3 {
     font-size: 55px;
     font-style: italic;
     color: #fce138;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-content p {
@@ -140,7 +160,9 @@ h3 {
     border-width: 3px;
     border-color: #024e76;
     width: 49%;
-    margin: 3.5%
+    margin: 3.5%;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
 }
 
 .hero-form p {
@@ -157,6 +179,11 @@ h3 {
     background-color: navy;
     font-size: 16px;
     padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.hero-form button:hover {         /* style for mouse hover */
+    background-color: #39a6b2;
 }
 
 .form-input {
@@ -167,7 +194,13 @@ h3 {
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);  /* make the cell slightly transparent */
+}
 
+.form-input:focus {
+    background-color: rgba(255,255,255, 1);   /* make the cell opaque */
+    outline: none;
 }
 /* End of "hero-form" styling. */
 
@@ -224,7 +257,6 @@ h3 {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -266,6 +298,10 @@ h3 {
     font-size: 26px;
     line-height: 1.5;
     color: #024e76;
+}
+
+.step:not(:last-child) {
+    border-bottom: 1px solid #39a6b2;
 }
 
 /* End of styles for the "what you do" section. */
@@ -368,6 +404,12 @@ h3 {
     font-size: 16px;
     padding: 15px 0;
     font-weight: bold;
+    border-radius: 10px;
+}
+
+.contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
 }
 
 .contact-form input, .contact-form textarea {
@@ -379,7 +421,15 @@ h3 {
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
 }
+
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+}
+
 
 /* End of styles for "about us" section. */
 
@@ -445,6 +495,7 @@ h3 {
     header {
         padding-bottom: 0;   
         justify-content: center; 
+        position: relative;
     }
 
     header h1 {
