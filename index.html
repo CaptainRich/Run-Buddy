@@ -8,7 +8,7 @@
         
         <title>Run Buddy</title>     <!-- The title of the browser tab for this page. -->
 
-        <!-- Point to the style sheet.  -->
+        <!-- Point to the style sheet, using a relative path.  -->
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
 
@@ -26,6 +26,7 @@
                     <!-- Unordered list of targets -->
                     <li>
                         <!-- Anchor Element <a> -->
+                        <!-- The # instructs the browser to jump to the associated ID within this page. -->
                         <a href="#What-we-do">What We Do</a>
                     </li>
                     <li>
@@ -88,14 +89,15 @@
                     </p>
  
                     <p>
-                        <!-- Usage acknoledgement -->
+                        <!-- Usage acknowledgement -->
                         <span class="checkbox-wrapper">
                             <input type="checkbox" name=18-years", id="age-check" />
                             <label for="age-check">I acknowledge that I am at least 18 years of age.</label>
                         </span>
                     </p>
 
-                    <button type="submit" >Get Running!</button>
+                    <!-- The 'title' attribute produces a pop-up with the specified text when this button is hovered over.-->
+                    <button type="submit" title="Submit this form">Get Running!</button>
                 </form>
             </div>
 
@@ -104,6 +106,7 @@
 
 
         <!-- What we do Section -->
+        <!-- The ID here is associated with the navigation links above, by the # character. -->
         <section id="What-we-do" class="intro">
             <div class="flex-row">
                 <h2 class="section-title primary-border">What We Do</h2>

@@ -5,11 +5,11 @@
     --tertiary-color: #39a6b2;
 }
 
-/* Remove the defauult HTML style assumptions. */
+/* Remove the default HTML style assumptions. */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;   /* include border and padding in determining the size of elements */
 }
 
 /* Define the main body style */
@@ -20,7 +20,7 @@ body{
 
 /* Define the style for the header  */
 header {
-    /* 20 pixesl top& bottom, 35 pixels left & right */
+    /* 20 pixels top & bottom, 35 pixels left & right */
     padding: 20px  35px;     
     background-color: var(--tertiary-color);
     display: flex;
@@ -37,7 +37,7 @@ header {
 
     z-index: 9999;          /* so the header is always on top */
 }
-
+j
 /*  This only applies to the "h1" tag of the "header"  */
 header h1 {
     font-weight: bold;
@@ -45,10 +45,11 @@ header h1 {
     font-size: 36px;
     color: var(--primary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: inline;     /* not really needed with the 'display: flex' above */
 }
 
 /* Define the style for the "anchors" in the header */
-/* I we don't specify "none", links will be underlined blue. */
+/* If we don't specify "none", links will be underlined blue. */
 header a {
     text-decoration: none;
     color: var(--primary-color);
@@ -57,6 +58,7 @@ header a {
 
 /* Move the "nav" elements to the right. */
 header nav {
+    float: right;
     margin: 7px 0;
 }
 
@@ -100,12 +102,14 @@ footer h2 {
     color: var(--secondary-color);
     font-size: 30px;
     margin: 0;
+    display: inline;     /* not really needed with the 'display: flex' above */
 }
 
 /* Apply a style to the "div" element which defines the rest of the footer.  */
 footer div {
     line-height: 1.5;
     text-align: right;
+    float: right;  /* not really needed with the 'display: flex' above */
 }
 
 footer a {
