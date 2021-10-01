@@ -8,7 +8,10 @@ A website that offers fitness training services.
 ## Website
 https://captainrich.github.io/run-buddy/
 
-## Contribution
-Made by [Richard Ay, UT Coding Boot Camp]
+Alternatively, just double click 'index.html' for local usage.
 
-### ©️2019 Run Buddy, Inc 
+
+## Contribution
+Made by [Richard Ay, UT Coding Boot Camp, 7/2020]
+
+### ©️2020 Run Buddy, Inc 

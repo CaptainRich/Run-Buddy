@@ -124,7 +124,7 @@
 
 
         <!-- What you do Section -->
-        <section id="What-you-do" class="steps">
+        <section id="What-you-do" class="steps">    <!-- This 'id' ties back to the navigation bar. -->
             <div class="flex-row">
                 <h2 class="section-title secondary-border">What You Do</h2>
             </div>
@@ -196,14 +196,14 @@
                 <article class="trainer">
                     <span>
                         <div class="trainer-img trainer-1">
-                            <!-- mulitple classes specified -->
+                            <!-- multiple classes specified, 'trainer-1' brings in the image via CSS. -->
                             <div>
                                 <h3>Arron Stephens</h3>
                                 <h4>Speed / Strength</h4>
                             </div>
                         </div>
                         <!-- <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes ready to pump iron." /> -->
-                        <div class="trainer-bio">
+                        <div class="trainer-bio text-left">
                             
                             <h3>Arron Stephens</h3>
                             <h4>Speed / Strength</h4>     
@@ -227,7 +227,7 @@
                             </div>
                         </div>
                         <!-- <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout." /> -->
-                        <div class="trainer-bio">
+                        <div class="trainer-bio text-left">
                             
                             <h3>Joanna Gill</h3>
                             <h4>Endurance</h4>   
@@ -349,6 +349,7 @@
                         Some Town, CA <br />
                         12345<br />
                         P: 555.RUN.BUDZ (555.786.2839)<br />
+                        <!-- 'mailto' will open the default mail client and populate the 'to' field with this info. -->
                         E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
                     </address>
                 </div>
@@ -368,10 +369,9 @@
                     </form>
                 </div>
         
-                <!-- Add a map showing Office Loation. -->
+                <!-- Add an interactive map showing Office Loation. The height/width of the 'iframe' are specified in CSS. -->
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.0498518246104!2d-95.6975031853204!3d30.03542762595441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640d52cd123db23%3A0x73aa9d2ad0eab899!2s17902%20Lake%20Cypress%20Hill%20Dr%2C%20Cypress%2C%20TX%2077429!5e0!3m2!1sen!2sus!4v1595800879255!5m2!1sen!2sus"
-                    frameborder="0" style="border:0;" allowfullscreen="">
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.7429682732904!2d-95.58777914931115!3d29.9580710295138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640d2231bd3594d%3A0xb8354940ae587dc1!2s12777%20Jones%20Rd%2C%20Houston%2C%20TX%2077070!5e0!3m2!1sen!2sus!4v1633124786835!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" frameborder="0" >
                 </iframe>
         
             </div>
