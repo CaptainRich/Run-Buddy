@@ -23,10 +23,10 @@ header {
     /* 20 pixels top & bottom, 35 pixels left & right */
     padding: 20px  35px;     
     background-color: var(--tertiary-color);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: -webkit-sticky;     /* for Safari */
+    display: flex;                      /* applies to the whole header */
+    justify-content: space-between;     /* puts the extra space between the <h1> and <nav> elements. */
+    flex-wrap: wrap;                    /* lets the <nav> elements spill to a 2nd (or more) line(s) if needed. */
+    position: -webkit-sticky;           /* for Safari */
     position: sticky;
     top: 0;
     /* Copied from ".hero" below so that the "header" looks like it is part of the "hero" area. */
@@ -45,7 +45,7 @@ header h1 {
     font-size: 36px;
     color: var(--primary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    display: inline;     /* not really needed with the 'display: flex' above */
+    /* display: inline;     /* not really needed with the 'display: flex' above */
 }
 
 /* Define the style for the "anchors" in the header */
@@ -58,7 +58,7 @@ header a {
 
 /* Move the "nav" elements to the right. */
 header nav {
-    float: right;
+    /* float: right;     /* not really needed with the 'display: flex' above */
     margin: 7px 0;
 }
 
@@ -68,8 +68,8 @@ header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    list-style: none;
+    align-items: center;                /* vertically center items in the <nav> element. */
+    list-style: none;                   /* turn off bullet point icons */
 }
 
 /* Define the decoration of the header links. */
@@ -88,6 +88,7 @@ header nav ul li a:hover {         /* change the button when the mouse hovers */
     text-shadow: none;
 }
 
+/* ************************************************************************** */
 /* Style the footer area. */
 footer {
     background: var(--primary-color);
@@ -102,14 +103,14 @@ footer h2 {
     color: var(--secondary-color);
     font-size: 30px;
     margin: 0;
-    display: inline;     /* not really needed with the 'display: flex' above */
+    /* display: inline;     /* not really needed with the 'display: flex' above */
 }
 
 /* Apply a style to the "div" element which defines the rest of the footer.  */
 footer div {
     line-height: 1.5;
     text-align: right;
-    float: right;  /* not really needed with the 'display: flex' above */
+    /* float: right;  /* not really needed with the 'display: flex' above */
 }
 
 footer a {
@@ -122,6 +123,7 @@ section {
 
 }
 
+/* *********************************************************** */
 /* Styling for the "hero" section of the page. */
 .hero {
     background-image: url("../images/hero-bg.jpg");
@@ -129,7 +131,7 @@ section {
     background-attachment: fixed;
     background-position: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: center;    /* positions elements as close to the center of the screen as possible */
     flex-wrap: wrap;
     align-items: flex-start;
 }
@@ -170,7 +172,7 @@ h3 {
     border-style: solid;
     border-width: 3px;
     border-color: var(--secondary-color);
-    width: 49%;
+    width: 40%;  
     margin: 3.5%;
     box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
