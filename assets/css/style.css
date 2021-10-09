@@ -426,7 +426,7 @@ h3 {
     font-size: 22px;
 }
 
-/* Use a pseudo-elment to inject a background on top of the image that we can then manipulate with the 'transition' animation control. */
+/* Use a pseudo-element to inject a background on top of the image that we can then manipulate with the 'transition' animation control. */
 .trainer-img::after {
     content: "";
     height: 100%;
@@ -484,7 +484,7 @@ h3 {
 
 /* End of styles for "trainer" section. */
 
-/* Styles for "about us" section. */
+/* Styles for "about us / Reach Out" section. */
 .contact{
     background: var(--secondary-color);
 }
@@ -508,7 +508,7 @@ h3 {
 
 .contact-info iframe {
     height: 450px;
-    width:  600px;
+    /* width:  600px; */
 
 }
 
