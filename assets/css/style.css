@@ -74,7 +74,7 @@ header nav ul {
 
 /* Define the decoration of the header links. */
 header nav ul li a {
-    padding: 10px 15px;
+    padding: 10px 15px;    /* added to replace 'margin' for better viewing with media-queries */
     font-weight: lighter;
     font-size:  1.55vw;    /* vw = viewport width, here 1.55% of window width */
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -133,7 +133,7 @@ section {
     display: flex;
     justify-content: center;    /* positions elements as close to the center of the screen as possible */
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: flex-start;    /* added for media-queries */
 }
 
 h3 {
@@ -147,7 +147,7 @@ h3 {
     margin: 3.5%;
     color: #fff;
     font-size: 18px;
-    line-height: 1.2;
+    line-height: 1.2;          /* added for media-queries */
 }
 
 .hero-content h2 {
@@ -281,7 +281,7 @@ h3 {
 /* Define a few general styles for the following four sections. */
 /* These are 'utility' classes. */
 .section-title {
-    font-size: 48px;
+    font-size: 48px;       /* reduced for media-queries */
     border-bottom: 3px solid;
     color: var(--secondary-color);
     padding-bottom: 20px;
@@ -675,12 +675,17 @@ h3 {
     .contact-info iframe {
         flex: 1 100%
     }
+
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
 }  /* End of Media query style for smaller desktop screens and smaller than 980. */
 
 /* Media query style for tablets and smaller than 768. */
 @media screen and (max-width: 768px) {
     section {
-        padding: 30px 15px;
+        padding: 30px 15px;    /* vertical padding is 30px, horizontal padding is 15px */
     }
 
     .step h3 {
@@ -753,7 +758,7 @@ h3 {
     }
 
     .contact-form {
-        order: 3;
+        order: 3;          /* switch the HTML order so this form is last */
     }
 }  /* End of Media query style for mobile phones and smaller. */
 
