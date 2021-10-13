@@ -586,9 +586,9 @@ h3 {
 .service-grid-container {
     background: lightyellow;
     width: 80%;
-    display: grid;
-    grid-template-columns: 1fr repeat(2, 4fr);  /* repeat (iterator, size) */
-    grid-template-rows: repeat(5, 1fr) 2fr;
+    display: grid;                      /* this sets up a CSS grid */   /* 'fr' is a fractional unit */
+    grid-template-columns: 1fr repeat(2, 4fr);  /* 1 column, then 2 the same because of repeat (iterator, size) */
+    grid-template-rows: repeat(5, 1fr) 2fr;     /* 6 rows, 5 the same, 1 double the size of the first 5 */
     border: 2px solid var(--secondary-color);
     color: var(--secondary-color);
     font-size: 1.2rem;
