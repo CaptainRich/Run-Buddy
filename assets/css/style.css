@@ -411,6 +411,7 @@ h3 {
     padding: 15px;
     align-items: flex-end;
     position: relative;
+    overflow: hidden;        /* to hide the h3 and h4 text, the trainer names */
 }
 
 .trainer-img h3 {
@@ -418,12 +419,14 @@ h3 {
     z-index: 900;
     font-size: 28px;
     margin-bottom: 5px;
+    top: 200px;              /* move the text to the outside, which hides it due to the above 'overflow' */
 }
 
 .trainer-img h4 {
     position: relative;
     z-index: 900;
     font-size: 22px;
+    top: 200px;              /* move the text to the outside, which hides it due to the above 'overflow' */
 }
 
 /* Use a pseudo-element to inject a background on top of the image that we can then manipulate with the 'transition' animation control. */
@@ -432,7 +435,7 @@ h3 {
     height: 100%;
     width: 100%;
     background: linear-gradient( rgba(252, 225, 56, 0.3), var(--secondary-color));
-    opacity: 0;
+    opacity: 0;                    /* the starting state for animation */
     position: absolute; 
     top: 0;
     left: 0;
@@ -440,13 +443,13 @@ h3 {
 
 
 .trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
-    top: 0px;
-    opacity: 1;
-    transition-duration: 2s;
+    top: 0px;                      /* move the h3/h4 text back into position with the animation */
+    opacity: 1;                    /* the ending state for animation of the text*/
+    transition-duration: .6s;
 }
 
 .trainer:hover .trainer-img::after {
-    opacity: 1;
+    opacity: 1;                    /* the ending state for animation of the background*/
 }
 
 .trainer-1 {
