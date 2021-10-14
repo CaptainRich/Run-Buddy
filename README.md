@@ -6,7 +6,7 @@ A website that offers fitness training services.
 * CSS   (for consistent styling): flex-box, media queries, CSS-grid, animations
 
 ## Website
-https://captainrich.github.io/run-buddy/
+https://captainrich.github.io/Run-Buddy/
 
 Alternatively, just double click 'index.html' for local usage.
 
