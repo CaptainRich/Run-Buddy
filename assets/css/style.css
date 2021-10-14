@@ -27,8 +27,8 @@ header {
     justify-content: space-between;     /* puts the extra space between the <h1> and <nav> elements. */
     flex-wrap: wrap;                    /* lets the <nav> elements spill to a 2nd (or more) line(s) if needed. */
     position: -webkit-sticky;           /* for Safari */
-    position: sticky;
-    top: 0;
+    position: sticky;                   /* prevents the header from scrolling off the top of the window */
+    top: 0;                             /* tells the browser where to stick the header element */
     /* Copied from ".hero" below so that the "header" looks like it is part of the "hero" area. */
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;  /* avoid clipping the image */
@@ -81,7 +81,7 @@ header nav ul li a {
 
 }
 
-header nav ul li a:hover {         /* change the button when the mouse hovers */
+header nav ul li a:hover {         /* change the button when the mouse hovers over it */
     background: var(--primary-color);
     color: var(--secondary-color);
     border-radius: 15px;
@@ -175,7 +175,7 @@ h3 {
     width: 40%;  
     margin: 3.5%;
     box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 .hero-form p {
@@ -213,7 +213,7 @@ h3 {
 
 .form-input:focus {
     background-color: rgba(255,255,255, 1);   /* make the cell opaque */
-    outline: none;
+    outline: none;                              /* remove the browser's default styling border */
 }
 
 .checkbox-wrapper input, .radio-wrapper input {
@@ -375,7 +375,7 @@ h3 {
     color: var(--secondary-color);
 }
 
-.step:not(:last-child) {
+.step:not(:last-child) {     /* put a bottom border below every child, except the last one */
     border-bottom: 1px solid var(--tertiary-color);
 }
 
@@ -633,7 +633,7 @@ h3 {
     header {
         padding-bottom: 0;   
         justify-content: center; 
-        position: relative;
+        position: relative;            /* this will undo the 'sticky' business for the header */
     }
 
     header h1 {
