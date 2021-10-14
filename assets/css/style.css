@@ -44,7 +44,7 @@ header h1 {
     margin: 0;
     font-size: 36px;
     color: var(--primary-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.85);  /* the last value is transparency, 1 is opaque, 0 is fully transparent. */
     /* display: inline;     /* not really needed with the 'display: flex' above */
 }
 
@@ -77,7 +77,7 @@ header nav ul li a {
     padding: 10px 15px;    /* added to replace 'margin' for better viewing with media-queries */
     font-weight: lighter;
     font-size:  1.55vw;    /* vw = viewport width, here 1.55% of window width */
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.85);
 
 }
 
@@ -154,7 +154,7 @@ h3 {
     font-size: 55px;
     font-style: italic;
     color: var(--primary-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.85);
 }
 
 .hero-content p {
@@ -167,7 +167,7 @@ h3 {
 /* Styling for the hero input form. */
 .hero-form {
     color: var(--secondary-color);
-    background-color: var(--primary-color);
+    background-color: rgba(252,225,56,0.7);       /* primary color with transparency */
     padding: 20px;
     border-style: solid;
     border-width: 3px;
