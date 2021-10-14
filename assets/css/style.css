@@ -284,6 +284,7 @@ h3 {
     font-size: 48px;       /* reduced for media-queries */
     border-bottom: 3px solid;
     color: var(--secondary-color);
+    padding-top: 25px;
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto 35px auto;
